@@ -1,0 +1,243 @@
+@import "custom-field.css";
+
+:root {
+    --primary: #9932CC;
+    --white: #ffffff;
+    --gray: #696969;
+    --light: #F8F8FF;
+    --red: #FF2E2E;
+    --yellow: #FFFF5C;
+    --green: #228B22;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0 auto;
+    width: 100%;
+    background: var(--light);
+}
+
+a {
+    cursor: pointer;
+}
+
+.text-center {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    color: var(--primary);
+}
+
+button, .button {
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+    opacity: 90%;
+}
+
+.button-primary {
+    background-color: var(--primary);
+}
+
+.button-error {
+    background: var(--red);
+}
+
+.button-disabled {
+    background: var(--yellow);
+    color: var(--gray);
+    cursor: not-allowed;
+}
+
+.add-product-box {
+    position: fixed;
+    top: 96px;
+    right: 40px;
+    z-index: 10;
+}
+
+.add-product-button {
+    background-color: var(--primary);
+    border-radius: 100%;
+    font-size: 32px;
+    height: 52px;
+}
+
+.navbar {
+    height: 60px;
+    padding: 12px;
+    background: var(--primary);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    gap: 32px;
+}
+
+.menu a {
+    color: var(--white);
+}
+
+.exit-container a {
+    color: var(--white);
+}
+
+.logo {
+    height: 40px;
+}
+
+footer {
+    background: var(--gray);
+    padding: 40px 16px 8px 16px;
+    color: var(--white);
+    text-align: center;
+}
+
+footer .merchan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-content {
+    padding: 12px;
+    min-height: calc(100vh - 164px);
+}
+
+.title-container {
+    text-align: center;
+    color: var(--gray);
+}
+
+.product-card-box {
+    background: var(--white);
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    border-radius: 10px;
+}
+
+.product-card {
+    margin: 16px;
+    position: relative;
+
+}
+
+.img-card {
+    height: 160px;
+    object-position: center;
+    object-fit: contain;
+    width: 100%;
+
+}
+
+.card-amount {
+    color: var(--green);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card-actions {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.card-description {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.search-container {
+    width: 66%;
+    margin: auto;
+    display: flex;
+    gap: 12px;
+    align-items: end;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.has-error {
+    border: 2px solid red;
+}
+
+.help-block {
+    padding: 8px 20px;
+    border-radius: 12px;
+    background-color: rgba(255, 0, 0, 0.3);
+    border: 4px solid red;
+}
+
+.alert {
+    position: absolute;
+    bottom: 120px;
+    right: 80px;
+    border: 3px solid var(--green);
+    background: rgb(147, 250, 165);
+    text-align: center;
+    padding: 10px 30px;
+}
+
+@media (max-width: 1023px) {
+    .product-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 639px) {
+    .product-list {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+.progress{
+   height: 10px;
+   background-color: var(--primary);
+   animation: progress-animation 5s infinite;
+}
+@keyframes progress-animation{
+    0% { width: 0%; }
+    100% { width: 100%}
+}

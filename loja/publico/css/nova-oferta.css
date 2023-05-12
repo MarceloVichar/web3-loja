@@ -1,0 +1,17 @@
+.form {
+    width: 50%;
+    margin: auto;
+    display: grid;
+    gap: 16px;
+}
+
+.form-actions {
+    padding-top: 20px;
+    margin: auto;
+}
+
+@media (max-width: 1023px) {
+    .form {
+        width: 100%;
+    }
+}

@@ -1,0 +1,7 @@
+# Ignore as imagens de upload
+**/img/*
+
+# Não ignore as imagens do sistema
+!**/img/padrao.png
+
+.idea/

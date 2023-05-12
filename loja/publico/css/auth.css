@@ -1,0 +1,53 @@
+.page-content {
+    min-height: 100vh;
+    background: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.merchan {
+    color: var(--white);
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-weight: bold;
+    font-size: 22px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+
+.logo {
+    height: 80px;
+}
+
+.auth-box {
+    background: var(--white);
+    padding: 12px;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.auth-box h2 {
+    text-align: center;
+}
+
+.form-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.field {
+    margin-bottom: 10px;
+}
+
+.back {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.back a {
+    color: var(--primary);
+}
