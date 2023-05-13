@@ -3,5 +3,6 @@
 
 # Não ignore as imagens do sistema
 !**/img/padrao.png
+!**/img/logo.png
 
 .idea/
